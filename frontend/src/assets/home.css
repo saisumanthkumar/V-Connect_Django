@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 64px;
+    margin-top: 180px;
+}
+
+.chat-form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+.chat-form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 60%;
+    min-width: 300px;
+    border: 0;
+    margin: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.chat-form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #31b3ff;
+    width: 60%;
+    min-width: 300px;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 16px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    margin-top: 32px;
+    padding: 24px 0px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+.fields a {
+    text-decoration: none;
+    color: black;
+    width: inherit;
+}
+
+.fields,
+.fields a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.field {
+    border: 2px solid black;
+    font-family: monospace;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    margin: 16px;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.field span {
+    font-size: 30px;
+    position: relative;
+    top: 3px;
+}
