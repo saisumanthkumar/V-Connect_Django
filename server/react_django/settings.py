@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import django_heroku
+from .env import SECRET_KEY,NAME,HOST,PORT,USER,PASSWORD
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,12 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-^*=0#t6-f!ce#+&_t6)nd9@n+$i0oofvt=2@82(h$qzc+=mqaj'
+SECRET_KEY = SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS=['djangochat951.herokuapp.com']
+ALLOWED_HOSTS=['localhost:8000']
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
@@ -83,11 +84,11 @@ WSGI_APPLICATION = 'react_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'ddbavskfp6ighg',
-        'HOST': 'ec2-54-160-35-196.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'USER': 'txhxvofhkbcvfl',
-        'PASSWORD': 'a595e762484cb507fcc4bb12ebd17150951a7be16ec93779188e9df0f9f040f1'
+        'NAME': NAME,
+        'HOST': HOST,
+        'PORT': PORT,
+        'USER': USER,
+        'PASSWORD': PASSWORD
     }
 }
 # Password validation
